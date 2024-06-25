@@ -1,0 +1,23 @@
+
+Å
+java:S1186É"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ª•óû8‰™õø„2J$c8a56cb2-f023-47a2-8b06-b98e4aca5f15
+Ê
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Õ¬‚ûşÿÿÿÿ8Š™õø„2J$2b136553-7fb5-486f-8fb8-8d68f5b75355
+µ
+java:S1130Ò"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(€ó¶êúÿÿÿÿ8ú›õø„2J$b43cc9e2-f970-4f6a-b1f9-61cfe0ccebf1
+n	java:S106Ó"+Replace this use of System.out by a logger.(çÄş‰8…šõø„2J$d76af684-aadd-4a57-b6dc-04f1e4a24fb4
+…
+java:S1075ê"ARefactor your code to get this URI from a customizable parameter.(ÎØÜå8Åšõø„2J$61284b32-7f2a-475a-89c2-a5f6617a8274
+Y
+java:S1612ù"6Replace this lambda with method reference 'list::add'.(êú”‹ıÿÿÿÿ8¤²òş„2
+	java:S125û"<This block of commented-out lines of code should be removed.(ÆÎ£ë8æ›õø„2J$548094e2-d6b4-490d-a726-26774788d517
+Ê
+java:S1130"€Remove the declaration of thrown exception 'net.sf.jasperreports.engine.JRException', as it cannot be thrown from method's body.(Õ¬‚ûşÿÿÿÿ8÷›õø„2J$ad221970-d57a-416f-98db-c5bb91c4b3a3
+
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(Õ¬‚ûşÿÿÿÿ8¬²òş„2
+z
+java:S1128"XRemove this unused import 'net.sf.jasperreports.engine.data.JRBeanCollectionDataSource'.(¦ŸŸ˜ıÿÿÿÿ8Å²òş„2
+}
+java:S1144"4Remove this unused private "generateInvoice" method.(Õ¬‚ûşÿÿÿÿ8Ëõø„2J$a5a99668-fbf4-43d4-a5f4-7e9d9da374c4
+x
+java:S1144“"/Remove this unused private "viewReport" method.(¬œ”üûÿÿÿÿ8Íõø„2J$e210c31d-9a13-4bad-b9d9-60130d371e40
