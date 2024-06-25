@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="placeOrderWindow" prefHeight="545.0" prefWidth="799.0" style="-fx-background-color: #E6F2FF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.PlaceOrderFormController">
+    <children>
+        <Button fx:id="btnAddToCart" layoutX="291.0" layoutY="298.0" mnemonicParsing="false" onAction="#btnAddToCartOnAction" prefHeight="40.0" prefWidth="48.0" style="-fx-background-color: white;" textFill="#5b3d3d">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="25.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/cart.jpg" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="546.0" stroke="WHITE" strokeType="INSIDE" width="258.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a5a8ac" height="59.0" layoutX="258.0" stroke="WHITE" strokeType="INSIDE" width="543.0" />
+        <Label layoutX="468.0" layoutY="14.0" text="Place Order" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="62.0" layoutY="14.0" onMouseClicked="#lblClothifyMouseClicked" style="-fx-border-color: black; -fx-border-radius: 10px; -fx-padding: 5px;" text="Clothify">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Label>
+        <Button fx:id="btnPlaceOrder" layoutX="21.0" layoutY="93.0" mnemonicParsing="false" onAction="#btnPlaceOrderOnAction" prefHeight="40.0" prefWidth="216.0" style="-fx-background-color: #4A90E2;" text="Place Order" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="btnManageEmployee" layoutX="21.0" layoutY="152.0" mnemonicParsing="false" onAction="#btnManageEmployeeOnAction" prefHeight="40.0" prefWidth="216.0" style="-fx-background-color: #4A90E2;" text="Manage Employee" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="btnOrderDetails" layoutX="21.0" layoutY="215.0" mnemonicParsing="false" onAction="#btnOrderDetailsOnAction" prefHeight="40.0" prefWidth="216.0" style="-fx-background-color: #4A90E2;" text="Manage Orders" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="btnProductDetails" layoutX="21.0" layoutY="273.0" mnemonicParsing="false" onAction="#btnProductDetailsOnAction" prefHeight="40.0" prefWidth="216.0" style="-fx-background-color: #4A90E2;" text="Manage Products" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="btnCustomerDetails" layoutX="21.0" layoutY="332.0" mnemonicParsing="false" onAction="#btnCustomerDetailsOnAction" prefHeight="40.0" prefWidth="216.0" style="-fx-background-color: #4A90E2;" text="Manage Customers" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="btnSupplierDetails" layoutX="21.0" layoutY="393.0" mnemonicParsing="false" onAction="#btnSupplierDetailsOnAction" prefHeight="40.0" prefWidth="216.0" style="-fx-background-color: #4A90E2;" text="Manage Suppliers" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <TextField fx:id="txtOrderId" layoutX="291.0" layoutY="98.0" prefHeight="26.0" prefWidth="178.0" promptText="Order ID" />
+        <TextField fx:id="txtCustomerAddress" layoutX="291.0" layoutY="263.0" prefHeight="26.0" prefWidth="178.0" promptText="Customer address" />
+        <TextField fx:id="txtCustomerName" layoutX="291.0" layoutY="182.0" prefHeight="26.0" prefWidth="178.0" promptText="Customer name" />
+        <TextField fx:id="txtCustomerEmail" layoutX="291.0" layoutY="225.0" prefHeight="26.0" prefWidth="178.0" promptText="Customer email" />
+        <ComboBox fx:id="cmbCustomerId" layoutX="291.0" layoutY="138.0" onAction="#cmbCustomerIdOnAction" prefHeight="26.0" prefWidth="178.0" promptText="Customer ID" />
+        <ComboBox fx:id="cmbItemId" layoutX="556.0" layoutY="98.0" onAction="#cmbItemIdOnAction" prefHeight="26.0" prefWidth="178.0" promptText="Item ID" />
+        <TextField fx:id="txtItemName" layoutX="556.0" layoutY="137.0" prefHeight="26.0" prefWidth="178.0" promptText="Item name" />
+        <TextField fx:id="txtItemQty" layoutX="556.0" layoutY="222.0" onKeyTyped="#txtQtyKeyTypedEvent" prefHeight="26.0" prefWidth="178.0" promptText="Qty" />
+        <TextField fx:id="txtPrice" layoutX="556.0" layoutY="263.0" prefHeight="26.0" prefWidth="178.0" promptText="Item Price" />
+        <Label layoutX="556.0" layoutY="310.0" prefHeight="20.0" prefWidth="56.0" text="Total    :">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblTotal" layoutX="625.0" layoutY="310.0" prefHeight="20.0" prefWidth="109.0" text="0.00" textAlignment="CENTER" textFill="RED">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnFinalizeOrder" layoutX="358.0" layoutY="302.0" mnemonicParsing="false" onAction="#btnFinalizeOrderOnAction" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #23FF91;" text="Finalize Order">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <TableView fx:id="tblCart" layoutX="274.0" layoutY="353.0" prefHeight="180.0" prefWidth="506.0">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="73.5999755859375" text="Item ID" />
+                <TableColumn fx:id="colName" prefWidth="108.800048828125" text="Name" />
+                <TableColumn fx:id="colUnitPrice" prefWidth="117.60003662109375" text="Unit Price" />
+                <TableColumn fx:id="colQty" prefWidth="78.4000244140625" text="Qty" />
+                <TableColumn fx:id="colTotal" prefWidth="128.800048828125" text="Total" />
+            </columns>
+        </TableView>
+        <Label fx:id="lblDate" layoutX="291.0" layoutY="70.0" textFill="#2818a1">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></Label>
+        <Label fx:id="lblTime" layoutX="556.0" layoutY="70.0" textFill="#249607">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtAvailableQty" layoutX="650.0" layoutY="182.0" onKeyTyped="#txtQtyKeyTypedEvent" prefHeight="26.0" prefWidth="84.0" promptText="Qty" />
+        <Label layoutX="556.0" layoutY="187.0" prefHeight="18.0" prefWidth="84.0" text="Available Qty :" />
+    </children>
+</AnchorPane>
